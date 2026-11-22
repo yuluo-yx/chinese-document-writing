@@ -4,10 +4,12 @@
 
 | 来源 | 版本与访问日期 | 采用范围 |
 | --- | --- | --- |
-| [ruanyf/document-style-guide](https://github.com/ruanyf/document-style-guide) | 原有技能记录的访问日期为 2026-04-08；本次没有重新核验上游版本。 | 保留原有标题层级、文档结构、命名与来源标注规则，调整可能影响事实保真的硬性要求。 |
-| Fenng 的 [tech-doc-style-chinese](https://github.com/Fenng/tech-doc-style-chinese) | [b119d01](https://github.com/Fenng/Tech-Doc-Style-Chinese/tree/b119d01c9bb7cd132b3c62fafdff34227c4410d1)，提交日期 2026-10-05，访问日期 2026-10-08。 | 整合任务模式、事实保真、机器可读内容保护、项目覆盖、术语排版、API 文案及受控中文技术写作。 |
+| [ruanyf/document-style-guide](https://github.com/ruanyf/document-style-guide) | 默认分支 `master`：[5719517](https://github.com/ruanyf/document-style-guide/tree/571951731efb4b83b1939af1d3dd830441ebef45)，提交日期 2025-12-19，核验日期 2026-11-22。 | 保留原有标题层级、文档结构、命名与来源标注规则；本次核验最新提交及 `docs/reference.md`，其 W3C 中文排版需求链接采用 `/TR/clreq/`。 |
+| Fenng 的 [tech-doc-style-chinese](https://github.com/Fenng/tech-doc-style-chinese) | 默认分支 `main`：[b119d01](https://github.com/Fenng/Tech-Doc-Style-Chinese/tree/b119d01c9bb7cd132b3c62fafdff34227c4410d1)，提交日期 2026-10-05，核验日期 2026-11-22。 | 整合任务模式、事实保真、机器可读内容保护、项目覆盖、术语排版、API 文案及受控中文技术写作。 |
 
-本次通过 GitHub API 定位 `SKILL.md`、`references/`、`LICENSE` 和主分支提交，按固定提交读取四份参考文件与许可。筛选依据是能够改善现有写作决策的规则；未导入上游脚本、测试、远端 workflow 或完整仓库。入口与参考已重新组织，不依赖旧技能目录。
+2026-11-22 通过 GitHub API 查询仓库默认分支及提交 SHA，按固定提交读取 Fenng 的 `SKILL.md` 和 `references/` 下四份参考文件，并核验阮一峰仓库的参考链接。筛选条件是与中文技术文档写作直接相关、能改善现有决策且未被本地规则覆盖的内容。两个规范上游均未出现晚于现有来源记录日期的新提交；本次属于基于已核验版本的补充整合，不宣称同步了新增提交。
+
+补齐项目约定的落地方式、含糊日期处理、Markdown 特殊结构保护、`Denied` 状态与参数表规则；自检按操作与非操作文档分别判断。未导入上游脚本、测试、远端 workflow 或完整仓库，也不将示例约定自动安装到目标项目。入口与参考已重新组织，不依赖旧技能目录。
 
 ## 规则调整
 
@@ -19,7 +21,7 @@
 - 千位分隔仅用于适用的正文数值，不修改年份、端口、代码或标识符；不根据含糊倍数自行推断百分比。
 - 保留目标项目自己的术语和品牌规范，不将技能内示例作为项目覆盖规则。
 
-这些默认规则直接替换原有写作默认值，无数据迁移。旧调用名 `$tech-doc-style-chinese` 改为 `$chinese-document-writing`；旧的 GitHub 五 PR 技能独立卸载，没有合并其行为。
+这些默认规则直接替换原有写作默认值，无数据迁移。若仍使用旧调用名 `$tech-doc-style-chinese`，改为 `$chinese-document-writing`；本技能不包含其他工作流技能的行为。
 
 ## 许可与归属
 
