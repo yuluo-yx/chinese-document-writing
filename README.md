@@ -12,6 +12,7 @@
 - `references/checklist.md`：交付前自检清单
 - `references/api-status-copy.md`：API 参数、状态与错误文案
 - `references/controlled-technical-chinese.md`：操作步骤、风险与故障排查规则
+- `references/project-conventions.md`：目标项目写作约定的建立方式与适用边界
 - `references/sources.md`：来源版本、采用范围与许可说明
 - `references/fenng-license.txt`：Fenng 上游的 MIT 许可
 - `agents/openai.yaml`：客户端展示名称与默认提示词
@@ -86,6 +87,7 @@ ln -s "$(pwd)" ~/.claude/skills/chinese-document-writing
 - 区分撰写、改写、校对与审阅，按授权范围修改
 - 保留事实、确定程度、条件、风险和机器可读内容，明确资料缺口
 - 按需读取结构模板、API 文案和操作手册规则
+- 支持在目标项目中整理术语、语气和排版约定，普通润色不自动新增规范文件
 - 默认采用直角引号、中西文留白和中文 Markdown 一段一行，服从目标项目约定
 - 交付前对照来源复核，避免排版修改影响语义或代码
 
